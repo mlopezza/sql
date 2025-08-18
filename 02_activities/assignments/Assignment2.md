@@ -54,7 +54,11 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
+I designed two different architectures for the CUSTOMER_ADDRESS table using Slowly Changing Dimensions: Type 1 (Overwrite) and Type 2 (Retain Changes).
+- Architecture 1 – SCD Type 1 (Overwrite): Updates the customer address without historical tracking. The primary key could be customer_id.
+- Architecture 2 – SCD Type 2 (Retain Changes): Updates the customer address by adding a new row/record and preserving the historical information (previous address information). The primary key could be address_id.
+
+Type 1 (Overwrite) and Type 2 (Retain Changes).
 ```
 
 ***
